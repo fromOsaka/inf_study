@@ -11,6 +11,4 @@ def game(a,n=0):
     else:
          return game(a+1,n+1) or game(a*2,n+1) or game(a*3,n+1)
 
-for i in range(1,35+1):
-    if game(i) == True:
-        print(i)
+print('hi git, i made this repository for my inf consp')

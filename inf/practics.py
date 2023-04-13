@@ -1,14 +1,14 @@
-def game(a,n=0):
-    if n > 4:
-        return False
-    if a >= 36:
-        if a <= 60:
-            return n in [2,4]
+def  f(a,b,m=0):            #номер 23 из  кегэ
+    if a > b:
+        return 0
+    if a == b:
+        if m <= 15:
+            return 1 
         else:
-            return n in [1,3]
-    if n % 2 == 0:
-        return game(a+1,n+1) and game(a*2,n+1) and game(a*3,n+1)
-    else:
-         return game(a+1,n+1) or game(a*2,n+1) or game(a*3,n+1)
-
-print('hi git, i made this repository for my inf consp')
+            return 0 
+    if a % 2 == 0:
+        return f(a+2,b,m+1) + f(a+3,b,m+1) + f(a*2+1,b,m+1)
+    if a % 2 != 0:
+        return f(a+2,b,m) + f(a+3,b,m) + f(a*2+1,b,m)
+    
+print(f(1,55))

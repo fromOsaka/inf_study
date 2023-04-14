@@ -12,3 +12,4 @@ def  f(a,b,m=0):            #номер 23 из  кегэ
         return f(a+2,b,m) + f(a+3,b,m) + f(a*2+1,b,m)
     
 print(f(1,55))
+print('Hi new iterm theme (hi new powerlevel10k style)')

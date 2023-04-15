@@ -1,15 +1,8 @@
-def  f(a,b,m=0):            #номер 23 из  кегэ
+def f(a,b):
+    if a == b:
+        return 1
     if a > b:
         return 0
-    if a == b:
-        if m <= 15:
-            return 1 
-        else:
-            return 0 
-    if a % 2 == 0:
-        return f(a+2,b,m+1) + f(a+3,b,m+1) + f(a*2+1,b,m+1)
-    if a % 2 != 0:
-        return f(a+2,b,m) + f(a+3,b,m) + f(a*2+1,b,m)
-    
-print(f(1,55))
-print('Hi new iterm theme (hi new powerlevel10k style)')
+    return f(a+1,b) + f(a*3,b) + f(a+2,b)
+
+print(f(2,9) * f(9,11) * f(11,12))

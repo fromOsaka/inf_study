@@ -332,4 +332,29 @@ for a in range(100):
     
 print(f(1,55))'''
 
-        
+'''file = open('inf_26_04_21_24.txt').readlines()
+lines = [line for line in file if line.count('A') < 25]         nO 24
+#rint(len(lines))
+mx = 0
+for line in lines:
+    letters = set(line)
+    for letter in letters:
+        dis = line.rindex(letter) - line.index(letter)
+        if dis > mx:
+            mx = dis
+print(mx)'''
+
+
+'''
+text = open('243.txt').read()
+statis = {}
+for i in range(1,len(text)-1):
+    if text[i-1] == text[i+1]:
+        if text[i] not in statis:
+            statis[text[i]] = 1
+        else:
+            statis[text[i]] += 1
+print(statis)
+result = [(statis[letter],letter) for letter in statis]
+result.sort()
+print(result)'''

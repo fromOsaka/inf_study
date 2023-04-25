@@ -10,3 +10,4 @@ print(statis)
 result = [(statis[letter],letter) for letter in statis]
 result.sort()
 print(result)
+print('hihihiha')

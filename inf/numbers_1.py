@@ -358,3 +358,14 @@ print(statis)
 result = [(statis[letter],letter) for letter in statis]
 result.sort()
 print(result)'''
+
+"""file = open('24_demo.txt').read()
+cer_len = max_len = 0
+for i in range(1,len(file)):
+    if file[i] != file[i-1]:
+        cer_len += 1
+        if cer_len > max_len:
+            max_len = cer_len
+    else:
+        cer_len = 1
+print(max_len)"""

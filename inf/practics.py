@@ -1,12 +1,9 @@
-file = open('107_24.txt').read()
-file = file.replace("AB", 'x')
-file = file.replace("CB",'x')
 k = 0
-m = 0
-for i in range(len(file)):
-    if file[i] == 'x':
-        k += 1
-        m = max(m,k)
-    else:
-        k = 0
-print(m)
+asd = []
+for i in range(312614, 312651+1):
+    for d in range(1, int(i**0.5)+1):
+        if d != (i // d):
+            k += 2
+        else:
+            k += 1
+    if k

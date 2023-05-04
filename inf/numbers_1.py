@@ -369,3 +369,13 @@ for i in range(1,len(file)):
     else:
         cer_len = 1
 print(max_len)"""
+
+"""from fnmatch import fnmatch
+for number in range(0, 10**8, 211):
+    if fnmatch(str(number),'11??4*56'):
+        print(number, number//211)"""
+
+'''from fnmatch import fnmatch
+for num in range(0, 3 * 10 ** 8, 1323):
+    if (num % 780 == 0) and fnmatch(str(num), '*[0,2,4,6,8]32??'):
+        print(num)'''

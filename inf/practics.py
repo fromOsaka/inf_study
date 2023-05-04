@@ -1,9 +1,4 @@
-k = 0
-asd = []
-for i in range(312614, 312651+1):
-    for d in range(1, int(i**0.5)+1):
-        if d != (i // d):
-            k += 2
-        else:
-            k += 1
-    if k
+from fnmatch import fnmatch
+for num in range(0, 3 * 10 ** 8, 1323):
+    if (num % 780 == 0) and fnmatch(str(num), '*[0,2,4,6,8]32??'):
+        print(num)

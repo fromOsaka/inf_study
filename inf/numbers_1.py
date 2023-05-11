@@ -379,3 +379,35 @@ for number in range(0, 10**8, 211):
 for num in range(0, 3 * 10 ** 8, 1323):
     if (num % 780 == 0) and fnmatch(str(num), '*[0,2,4,6,8]32??'):
         print(num)'''
+
+"""mx = 0
+for k1 in range(203):
+    for k2 in range(203-k1):    no 12 komp ege
+        s = k1 * '1' + k2 * '3'
+        while ('12' in s) or ('13' in s):
+            s = s.replace('12','21',1).replace('31','23',1).replace('13','23',1)
+        if '1' not in s:
+            ln = 0
+            for dig in s:
+                ln += int(dig)
+            if ln == 404:
+                if k1 + k2 > mx:
+                    mx = k1 + k2
+                    print(mx)
+"""
+
+
+'''
+count_of_numbers = 0       no 25 komp ege
+number = 220001
+while count_of_numbers < 5:
+    for d_min in range(2,int(number**0.5)+1):
+        if number % d_min == 0:
+            d_max = number // d_min
+            sum_d = d_min + d_max
+            if sum_d % 10 == 4:
+                count_of_numbers += 1
+                print(number, sum_d)
+            break
+    number += 1
+'''
